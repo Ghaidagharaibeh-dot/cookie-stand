@@ -1,4 +1,5 @@
 'use strict';
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -6,13 +7,13 @@ function getRandomInt(min, max) {
 }
 
 let worksHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-let createT = document.getElementById('mmmm')
+let createT = document.getElementById('lab07')
 let tableElm = document.createElement('table')
 createT.appendChild(tableElm)
 
 let thElm0 = document.createElement('th');
 tableElm.appendChild(thElm0);
-thElm0.textContent = 'mmmmmm';
+thElm0.textContent = '';
 for (let i = 0; i <= worksHours.length; i++) {
     let thElm2 = document.createElement('th');
     tableElm.appendChild(thElm2);
@@ -22,7 +23,7 @@ let thElm16 = document.createElement('th');
 tableElm.appendChild(thElm16);
 thElm16.textContent = 'Daily Location Total';
 
-let arrOfObject =[];
+let arrOfObject = [];
 
 function SalmonCookies(loactionName, minCust, maxCust, avgCookieSale) {
     this.loactionName = loactionName;
@@ -51,7 +52,7 @@ SalmonCookies.prototype.funammOfPurches = function () {
         this.total = this.total + this.ammOfPurches[i];
 
     }
-return
+    return
 
 }
 
@@ -84,27 +85,39 @@ let paris = new SalmonCookies("Paris", 20, 38, 2.3, 0, [], []);
 let lima = new SalmonCookies("Lima", 2, 16, 4.6, 0, [], []);
 
 
-for (let i = 0; i <= arrOfObject.length; i++) {
-   arrOfObject[i].funforCustomerNum();
-    arrOfObject[i].funammOfPurches();
-    arrOfObject[i].render();
-}
+/*for (let x = 0; x <= arrOfObject.length; x++) {
+    arrOfObject[x].funforCustomerNum();
+    arrOfObject[x].funammOfPurches();
+    arrOfObject[x].render();
+} */
+seattle.funforCustomerNum();
 
-function tabelfoot (){
-    let footerRow=document.createElement('tr');
+seattle.funammOfPurches();
+seattle.render();
+tokyo.funforCustomerNum();
+tokyo.funammOfPurches();
+tokyo.render();
+
+//function tabelfoot() {
+    let footerRow = document.createElement('tr');
     tableElm.appendChild(footerRow);
-    let contac=Document.createElement('th');
+    let contac = document.createElement('th');
     footerRow.appendChild(contac);
-    contac.textContent= 'Totals';
-    for(let i=0;i<=worksHours.length;i++){
-        let sum=0;
-        for(let j=0;j<worksHours.length;j++){
-            sum+=arrOfObject[j].ammOfPurches[j];
-        }
-        td=Document.createElement('td');
-        lasrrow.appendChild(td);
-        td.textContent=sum;
-     //   sum=seattle.ammOfPurches[i]+
-    }
-    
-}
+    contac.textContent = 'Totals';
+
+
+   // for (let i = 0; i <= worksHours.length; i++) {
+       // let sum=0
+        //sum = seattle.ammOfPurches[i]+tokyo.ammOfPurches[i]
+        /*for (let j = 0; j < worksHours.length; j++) {
+            sum=sum+arrOfObject[j].ammOfPurches[i];
+        }*/
+        //tdd22 = document.createElement('td');
+       // footerRow.appendChild(tdd22);
+        //tdd22.textContent = sum;
+        //   sum=seattle.ammOfPurches[i]+
+   // }
+//}
+//tabelfoot();
+//console.log(tabelfoot); 
+
