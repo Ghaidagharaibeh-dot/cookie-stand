@@ -7,12 +7,16 @@ body  {
 
  }
 header{
-    box-sizing: border-box;
+    
+   box-sizing: border-box;
     text-align: center;
    margin: 30px;
    margin-bottom: 0px;
-   color: #7eaa80;
+   color: rgb(240, 228, 206);
    font-family: "Sofia", sans-serif;
+   padding: 10px;
+  background-color: #7eaa80 ;
+  font-size: xx-large;
 
 }
 
