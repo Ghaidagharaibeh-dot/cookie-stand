@@ -23,7 +23,7 @@ let thElm16 = document.createElement('th');
 tableElm.appendChild(thElm16);
 thElm16.textContent = 'Daily Location Total';
 
-let arrOfObject = [];
+let arrOfObject =[];
 
 function SalmonCookies(loactionName, minCust, maxCust, avgCookieSale) {
     this.loactionName = loactionName;
@@ -85,18 +85,19 @@ let paris = new SalmonCookies("Paris", 20, 38, 2.3, 0, [], []);
 let lima = new SalmonCookies("Lima", 2, 16, 4.6, 0, [], []);
 
 
-/*for (let x = 0; x <= arrOfObject.length; x++) {
+for (let x = 0; x <= arrOfObject.length; x++) {
     arrOfObject[x].funforCustomerNum();
     arrOfObject[x].funammOfPurches();
     arrOfObject[x].render();
-} */
-seattle.funforCustomerNum();
+   
+} 
+//seattle.funforCustomerNum();
 
-seattle.funammOfPurches();
-seattle.render();
-tokyo.funforCustomerNum();
-tokyo.funammOfPurches();
-tokyo.render();
+//seattle.funammOfPurches();
+//seattle.render();
+//tokyo.funforCustomerNum();
+//tokyo.funammOfPurches();
+//tokyo.render();
 
 //function tabelfoot() {
     let footerRow = document.createElement('tr');
@@ -104,19 +105,18 @@ tokyo.render();
     let contac = document.createElement('th');
     footerRow.appendChild(contac);
     contac.textContent = 'Totals';
-
-
-   // for (let i = 0; i <= worksHours.length; i++) {
-       // let sum=0
-        //sum = seattle.ammOfPurches[i]+tokyo.ammOfPurches[i]
-        /*for (let j = 0; j < worksHours.length; j++) {
+   
+  /* for (let i = 0; i <= worksHours.length; i++) {
+        let sum=0
+        sum = seattle.ammOfPurches[i]+tokyo.ammOfPurches[i]
+        for (let j = 0; j < worksHours.length; j++) {
             sum=sum+arrOfObject[j].ammOfPurches[i];
-        }*/
-        //tdd22 = document.createElement('td');
-       // footerRow.appendChild(tdd22);
-        //tdd22.textContent = sum;
-        //   sum=seattle.ammOfPurches[i]+
-   // }
+        }
+        tdd22 = document.createElement('td');
+        footerRow.appendChild(tdd22);
+        tdd22.textContent = sum;
+          sum=seattle.ammOfPurches[i]+
+    }*/
 //}
 //tabelfoot();
 //console.log(tabelfoot); 
@@ -135,9 +135,12 @@ function submitEventFun(event) {
     console.log(maxNumber);
     let avgNumber = event.target.avg.value;
     console.log(avgNumber);
-    let Placess = new SalmonCookies(locationName, minNumber, maxNumber, avgNumber)
-    newPlace.funforCustomerNum();
-    newPlace.funammOfPurches();
-    newPlace.render();
-    newPlace
-}
+    let place = new SalmonCookies(locationName, minNumber, maxNumber, avgNumber)
+   // newPlace.funforCustomerNum();
+   // newPlace.funammOfPurches();
+   // newPlace.render();
+    //newPlace
+    place.funforCustomerNum();
+    place.funammOfPurches();
+    place.render();
+} 
