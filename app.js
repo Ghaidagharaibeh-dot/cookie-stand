@@ -227,3 +227,46 @@ contac.textContent = 'Totals';*/
 //tabelfoot();
 //console.log(tabelfoot); 
 
+let seattle = new SalmonCookies("Seattle", 23, 65, 6.3, 0, [], []);
+let tokyo = new SalmonCookies("Tokyo", 3, 24, 1.2, 0, [], []);
+let dubai = new SalmonCookies("Dubai", 11, 38, 3.7, 0, [], []);
+let paris = new SalmonCookies("Paris", 20, 38, 2.3, 0, [], []);
+let lima = new SalmonCookies("Lima", 2, 16, 4.6, 0, [], []);
+
+
+/*for (let x = 0; x <= arrOfObject.length; x++) {
+    arrOfObject[x].funforCustomerNum();
+    arrOfObject[x].funammOfPurches();
+    arrOfObject[x].render();
+} */
+seattle.funforCustomerNum();
+
+seattle.funammOfPurches();
+seattle.render();
+tokyo.funforCustomerNum();
+tokyo.funammOfPurches();
+tokyo.render();
+
+//function tabelfoot() {
+    let footerRow = document.createElement('tr');
+    tableElm.appendChild(footerRow);
+    let contac = document.createElement('th');
+    footerRow.appendChild(contac);
+    contac.textContent = 'Totals';
+
+
+   // for (let i = 0; i <= worksHours.length; i++) {
+       // let sum=0
+        //sum = seattle.ammOfPurches[i]+tokyo.ammOfPurches[i]
+        /*for (let j = 0; j < worksHours.length; j++) {
+            sum=sum+arrOfObject[j].ammOfPurches[i];
+        }*/
+        //tdd22 = document.createElement('td');
+       // footerRow.appendChild(tdd22);
+        //tdd22.textContent = sum;
+        //   sum=seattle.ammOfPurches[i]+
+   // }
+//}
+//tabelfoot();
+//console.log(tabelfoot); 
+
